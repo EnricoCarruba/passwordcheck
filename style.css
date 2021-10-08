@@ -26,5 +26,19 @@ body {
   margin: 0.2rem;
 }
 
+#button {
+  background-color: black;
+  color: white;
+  margin: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pw {
+  /* hier muss noch ein grid draus gemacht werden */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (min-width: 700px) {
 }
