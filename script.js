@@ -13,6 +13,7 @@ function pwChecks() {
     lowercaseCheck();
     uppercaseCheck();
     numberCheck();
+    minChars();
   } else {
     uncheckAll();
   }
@@ -66,3 +67,13 @@ function uncheckAll() {
 }
 
 function numberCheck() {}
+
+function minChars() {
+  if (input1.value.length > 10) {
+    const min = document.getElementById("characters");
+    min.textContent = "✅";
+  } else {
+    const min = document.getElementById("characters");
+    min.textContent = "❌";
+  }
+}
