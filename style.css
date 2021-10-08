@@ -6,7 +6,12 @@ html {
 .headings {
   font-family: Lobster;
   text-align: center;
-  font-size: 5rem;
+  font-size: 2.5rem;
+}
+
+#main-heading {
+  color: white;
+  text-shadow: 0.15rem 0.15rem black;
 }
 
 @media screen and (min-width: 768px) {
