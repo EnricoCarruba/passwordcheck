@@ -12,6 +12,7 @@ function pwChecks() {
   if (equalCheck()) {
     lowercaseCheck();
     uppercaseCheck();
+    numberCheck();
   } else {
     uncheckAll();
   }
@@ -42,15 +43,18 @@ function toggleButton() {
 
 function lowercaseCheck() {
   if (input1.value != input1.value.toUpperCase()) {
-    console.log("enthält kleine buchstaben");
-    console.log(input1.value);
+    const lowercase = document.getElementById("lowercase");
+    lowercase.innerText = "✅";
   }
 }
 
 function uppercaseCheck() {
   if (input1.value != input1.value.toLowerCase()) {
-    console.log("enthält große buchstaben");
-    console.log(input1.value);
+    const uppercase = document.getElementById("uppercase");
+    uppercase.innerText = "✅";
+  } else {
+    const uppercase = document.getElementById("uppercase");
+    uppercase.textContent = "❌";
   }
 }
 
@@ -60,3 +64,5 @@ function uncheckAll() {
     uncheck[i].textContent = "❌";
   }
 }
+
+function numberCheck() {}

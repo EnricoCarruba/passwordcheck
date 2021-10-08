@@ -41,8 +41,10 @@ body {
   justify-content: center;
 }
 
-b {
+ul {
   font-size: 0.75rem;
+  list-style: none;
+  padding-left: unset;
 }
 @media screen and (min-width: 700px) {
 }
