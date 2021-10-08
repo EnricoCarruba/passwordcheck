@@ -1,2 +1,13 @@
 html {
+  background-color: lightsalmon;
+  font-family: "Open Sans", sans-serif;
+}
+
+.headings {
+  font-family: Lobster;
+  text-align: center;
+  font-size: 5rem;
+}
+
+@media screen and (min-width: 768px) {
 }
