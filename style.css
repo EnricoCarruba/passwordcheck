@@ -34,22 +34,17 @@ body {
 }
 
 .pw {
-  /* hier muss noch ein grid draus gemacht werden */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-ul {
-  font-size: 0.75rem;
-  list-style: none;
-  padding-left: unset;
+.wrapper {
+  position: relative;
+  align-self: center;
 }
 
-.checks {
+p {
   display: inline;
-}
-
-@media screen and (min-width: 700px) {
 }
