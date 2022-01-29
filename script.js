@@ -66,7 +66,17 @@ function uncheckAll() {
   }
 }
 
-function numberCheck() {}
+function numberCheck(input1) {
+  const numbers = document.getElementById("numbers");
+
+  var text = input1;
+  pattern = /\D/;
+  if (pattern.test(text)) {
+    numbers.innerText = "✅";
+  } else {
+    numbers.innerText = "❌";
+  }
+}
 
 function minChars() {
   if (input1.value.length > 10) {
