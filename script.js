@@ -66,12 +66,14 @@ function uncheckAll() {
   }
 }
 
-function numberCheck(input1) {
+function numberCheck() {
   const numbers = document.getElementById("numbers");
+  const input1 = document.getElementById("pw1").value;
 
-  var text = input1;
   pattern = /\D/;
-  if (pattern.test(text)) {
+
+  //checks is text contains a number
+  if (pattern.test(input1)) {
     numbers.innerText = "✅";
   } else {
     numbers.innerText = "❌";
